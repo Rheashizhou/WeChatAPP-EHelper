@@ -1,0 +1,15 @@
+{
+  "usingComponents": {
+    "wux-upload": "../../dist/upload/index",
+    "wux-row": "../../dist/row/index",
+    "wux-col": "../../dist/col/index",
+    "wux-image": "../../dist/image/index",
+    "wux-cell-group": "../../dist/cell-group/index",
+    "wux-cell": "../../dist/cell/index",
+    "wux-textarea": "../../dist/textarea/index",
+    "wux-input": "../../dist/input/index",
+    "wux-rater": "../../dist/rater/index",
+    "wux-button": "../../dist/button/index",
+    "wux-calendar": "../../dist/calendar/index"
+  }
+}

@@ -1,0 +1,15 @@
+<!--pages/mine/list/list.wxml-->
+
+<view class='container'>
+
+  <view class='list'>
+      <view class='title'>标题</view>
+      <view class='time'>时间</view>
+      <text>{{openid}}ffff</text>
+  </view>
+
+</view>
+
+
+<text class="code" wx:if="{{queryResult}}">{{queryResult}}</text>
+

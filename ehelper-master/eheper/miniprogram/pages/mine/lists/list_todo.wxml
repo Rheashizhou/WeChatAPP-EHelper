@@ -1,0 +1,23 @@
+<!--pages/mine/lists/list_todo.wxml-->
+
+<view class='container'>
+
+  <view class='list' wx:for='{{sche_list}}' wx:key='_id'>
+    <view wx:if='{{item.priority == 2}}' class='highest'>
+      <view class='title'>标题: {{item.title}}</view>
+      <view class='time'>时间: {{item.due}}</view>
+      <view class='priority'>
+        <view>重要性：高</view>
+      </view>
+    </view>
+    <view wx:else class='high'>
+      <view class='title'>标题: {{item.title}}</view>
+      <view class='time'>时间: {{item.due}}</view>
+      <view class='priority'>
+        <view wx:if='{{item.priority == 0}}'>重要性：低</view>
+        <view wx:elif='{{item.priority == 1}}'>重要性：中</view>
+      </view>
+    </view>
+  </view>
+
+</view>

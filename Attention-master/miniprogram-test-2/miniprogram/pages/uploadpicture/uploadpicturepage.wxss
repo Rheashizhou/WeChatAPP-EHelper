@@ -1,0 +1,12 @@
+/* pages/uploadpicture/uploadpicturepage.wxss */
+@import '../../dist/styles/index.wxss';
+.save{
+  margin: 5vh;
+  background-color: rgb(151, 106, 209)
+}
+#title{
+  font-size: larger;
+  font-weight: bold;
+  margin-top: 5vh;
+  display: block;
+}

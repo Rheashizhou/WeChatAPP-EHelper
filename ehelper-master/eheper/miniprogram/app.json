@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/mine/mine",
+    "pages/mine/lists/list_todo",
+    "pages/mine/lists/list_done",
+    "pages/mine/lists/list_undone",
+    "pages/mine/highest/highest",
+    "pages/mine/analysis/analysis",
+    "pages/sche/sche",
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib"
+  ],
+  "window": {
+    "backgroundColor": "#EBEBEB",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#393a3f",
+    "navigationBarTitleText": "EasierHelper",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#36b9af",
+    "backgroundColor": "#fcfcfc",
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/sche/sche",
+        "text": "日程",
+        "iconPath": "images/sche.png",
+        "selectedIconPath": "images/sche_press.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/mine.png",
+        "selectedIconPath": "images/mine_press.png"
+      }
+    ]
+  }
+}

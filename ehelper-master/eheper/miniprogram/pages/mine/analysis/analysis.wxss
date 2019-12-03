@@ -1,0 +1,70 @@
+/* pages/mine/analysis/analysis.wxss */
+
+page {
+  background-color: #fff;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+.status {
+  margin-top: 30rpx;
+  width: 65%;
+  height: 100rpx;
+  font-size: 40rpx;
+  background-color: rgb(53, 153, 153);
+  color: #fff;
+  font-weight: lighter;
+}
+
+.hover {
+  position: relative;
+  top: 3rpx;
+  box-shadow: 0rpx 0rpx 8rpx #999 inset;
+}
+
+.data{
+  margin-top: 20rpx;
+  margin-left: 100rpx;
+  font-size: 30rpx;
+  height: 300rpx;
+}
+
+.total{
+  margin: 20rpx;
+  font-size: 35rpx;
+}
+
+.list{
+  margin: 10rpx;
+  width: 100%;
+  float:left;
+}
+
+.list .color{
+  width: 20rpx;
+  height: 40rpx;
+  margin: 10rpx 30rpx;
+  display:block-inline;
+  float:left;
+}
+
+.list .text{
+  width: 60%;
+  margin: 10rpx 20rpx;
+  float:left;
+}
+
+.list .todo{
+  background-color: #FFD700;
+}
+
+.list .done{
+  background-color: #B4EEB4;
+}
+
+.list .undone{
+  background-color: #B3B3B3;
+}

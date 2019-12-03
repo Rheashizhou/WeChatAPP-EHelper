@@ -1,0 +1,79 @@
+/* pages/home/homepage.wxss */
+@import '../../dist/styles/index.wxss';
+.scheitem{
+  background-color: rgb(250, 242, 250);
+  padding: 1vh;
+  display: flex;
+}
+.item{
+  height: 50vh;
+  display: flex;
+
+}
+.imgV{
+  
+  display: flex;
+  margin: 0.5vh;
+
+}
+.time{
+  font-size: small;
+  
+  vertical-align: right;
+}
+.content{
+align-content: center;
+font-size:larger;
+font-weight: bold;
+display: block;
+margin: 5%;
+}
+.date{
+  align-content: left;
+  font-size: larger;
+  font-style: oblique;
+  margin: 3%;
+}
+.rater{
+  padding: 5%;
+}
+.add{
+  border-radius: 50%;
+  background: rgb(191, 126, 216);
+  float: right;
+  margin-bottom: 2vh;
+}
+#add{
+  font-size: large;
+  font-weight: bolder;
+  color: #fff;
+
+}
+.delete{
+  align-self: bottom;
+  border-radius: 50%;
+  size:mini;
+  background-color: #fff;
+  
+  text-align: center;
+}
+#detext{
+  font-size: large;
+  font-weight: bolder;
+}
+.status{
+  display: block;
+  float: right;
+  font-weight: bold;
+}
+.green{
+  color: green;
+}
+.red{
+  color: red;
+}
+.cal{
+  margin: 3vh;
+  
+
+}

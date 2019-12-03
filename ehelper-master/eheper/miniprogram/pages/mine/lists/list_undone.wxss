@@ -1,0 +1,28 @@
+/* pages/mine/lists/list_undone.wxss */
+
+.container {
+  height: 100%;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.list {
+  background-color: #fff;
+  margin: 20rpx;
+  /* padding: 20rpx; */
+  border-radius: 5rpx;
+  border-top: 1rpx solid #dedede;
+  border-left: 1rpx solid #dedede;
+  box-shadow: 2rpx 2rpx 2rpx #c7c7c7;
+  color: #353535;
+  font-size: 30rpx;
+}
+
+.highest{
+  border: 7rpx solid #CD3700;
+  padding: 20rpx;
+}
+
+.high{
+  padding: 20rpx;
+}

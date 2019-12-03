@@ -1,0 +1,50 @@
+<!--pages/uploadpicture/uploadpicturepage.wxml-->
+<view class="container">
+  <wux-row>
+    <wux-col span="12">
+      <wux-upload listType="picture-card" fileList="{{ fileList }}" bind:change="onChange" bind:success="onSuccess" bind:fail="onFail" bind:complete="onComplete" bind:preview="onPreview" bind:remove="onRemove" >
+        <text>Upload</text>
+      </wux-upload>
+    </wux-col>
+  </wux-row>
+  <wux-row>
+   <wux-calendar id="wux-calendar" />            
+<view class='cal'>
+<wux-cell title="Calender " extra="{{ value1}}" bind:click="openCalendar"></wux-cell>
+</view>
+     <view><wux-divider show-text="{{ false }}" /></view>
+    <wux-col span="12">
+    
+     <view><wux-divider show-text="{{ false }}" /></view>
+      <text id='title'>主题</text>
+      <form bindsubmit='onUpload' bindreset='formreset'>
+  
+            <wux-cell hover-class="none">
+                <wux-input placeholder="Title" />
+            </wux-cell>
+        <wux-cell-group title="Details">
+            <wux-cell hover-class="none">
+                <wux-input  label="时间 : " />
+            </wux-cell>
+            <wux-cell hover-class="none">
+                <wux-input label="地点 : "  />
+            </wux-cell>
+            <wux-cell hover-class="none">
+                <wux-textarea label="事件内容 : "  />
+            </wux-cell>
+            <wux-cell title="重要性" hover-class="none">
+                <wux-rater slot="footer" default-value="{{ 0 }}"margin="{{ 15 }}"  icon="ios-star"/>
+            </wux-cell>
+            <wux-cell title="积极性" hover-class="none">
+                <wux-rater slot="footer" default-value="{{ 0 }}" margin="{{ 15 }}"  icon="ios-happy" />
+            </wux-cell>
+              <button class="save" form-type='submit'bindtap="onSave">保存</button>
+        
+
+        </wux-cell-group>
+</form>
+      
+    </wux-col>
+    
+  </wux-row>
+</view>

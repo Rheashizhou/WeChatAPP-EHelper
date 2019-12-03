@@ -1,0 +1,46 @@
+<!--pages/home/homepage.wxml-->
+
+           <wux-calendar id="wux-calendar" />
+<view class = "container">
+
+            
+<view class='cal'>
+<wux-cell title="Calender " extra="{{ value1}}" bind:click="openCalendar"></wux-cell>
+</view>
+<wux-wing-blank size="small">
+  <view  wx:for="{{array}}" wx:for-index="idx" wx:for-item="item">
+     
+    <view class='item'>
+         <view><wux-divider show-text="{{ false }}" /></view>
+    <navigator url='../uploadpicture/uploadpicturepage'>
+    <view  class="scheitem">
+      <wux-row >
+        <wux-col span="6">
+        <wux-row>
+          <wux-col span="2">          
+     <view class='delete' catchtap='deletesche'><text id='detext'>×</text></view>
+          </wux-col>
+          </wux-row>
+          <view  class="rater"><wux-rater slot="footer" default-value="{{ item.important }}" disabled /></view>
+          <text class="wux-text--center date">{{item.date}}</text>
+          <view class="wux-text--center content">{{item.content}}</view>
+        
+        </wux-col> 
+     、   <wux-col span="5">
+            <view class='imgV'><wux-image wux-class="image"shape="thumbnail" mode= " aspectFit"  src="{{item.picture}}" /></view>
+            <text class='time'>{{item.time}}</text>
+            <text class='status green' wx:if="{{item.status=='1'}}">{{item.msg}}</text>
+            <text class='status red' wx:if="{{item.status=='0'}}">{{item.msg}}</text>
+        </wux-col>
+        
+      
+      </wux-row>
+      </view>
+      </navigator>
+      </view>
+  </view>
+  
+        </wux-wing-blank>
+      <button class='add' bindtap='addsche'><text id="add" >+</text></button> 
+
+</view>

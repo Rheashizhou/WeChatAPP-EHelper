@@ -1,0 +1,19 @@
+/* pages/mine/list/list.wxss */
+
+.container {
+  height: 100%;
+  overflow-y: scroll;
+  width: 100%;
+  font-size: 40rpx;
+}
+
+.list{
+  background-color: #fff;
+  margin: 20rpx;
+  padding: 20rpx;
+  border-radius: 5rpx;
+  border-top: 1rpx solid #DEDEDE;
+  border-left: 1rpx solid #DEDEDE;
+  box-shadow: 2rpx 2rpx 2rpx #c7c7c7;
+}
+

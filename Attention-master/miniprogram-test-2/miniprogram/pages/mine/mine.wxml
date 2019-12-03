@@ -1,0 +1,45 @@
+<!--pages/mine/mine.wxml-->
+
+<!-- 未登录界面 -->
+<view wx:if='{{!logged}}' class='container'>
+  
+  <view class='userinfo'>
+    <image src='/images/user-unlogin.png' mode='aspectFill'></image>
+    <view class='infowrap'>
+      <button open-type='getUserInfo' bindgetuserinfo='onGetUserInfo' class='loginbut'>登录</button>
+    </view>
+  </view>
+
+  <view class='list_contain'>
+    <view class='cell' bindtap='showInfo'>关于</view>
+  </view>
+
+</view>
+
+
+<!-- 已登录界面 -->
+<view wx:if='{{logged}}' class='container'>
+  <view class='userinfo'>
+    <image src='{{avatarUrl}}' mode='aspectFill'></image>
+    <view class='infowrap'>
+      <view class='username'>{{username}}</view>
+      <view class='usercode'>用户ID：{{openid}}</view>
+    </view>
+  </view>
+  
+  <view class='list_contain'>
+    <view class='cell' bindtap='showHighest'>我的日程分布</view>
+    <view class='cell border_top' bindtap='showAnalysis'>我的完成情况</view>
+  </view>
+
+  <view class='list_contain'>
+    <view class='cell' bindtap='showListTodo'>待完成日程</view>
+    <view class='cell border_top' bindtap='showListDone'>已完成日程</view>
+    <view class='cell border_top' bindtap='showListUndone'>未完成日程</view>
+  </view>
+
+  <view class='list_contain'>
+    <view class='cell' bindtap='showInfo'>关于</view>
+  </view>
+
+</view>
